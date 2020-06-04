@@ -25,22 +25,23 @@ static void (*_logos_orig$_ungrouped$SBVolumeControl$increaseVolume)(_LOGOS_SELF
 
 #line 1 "Tweak.x"
 #import <AudioToolbox/AudioToolbox.h>
+#import <RemoteLog.h>
 
 
 static void _logos_method$_ungrouped$SBVolumeControl$increaseVolume(_LOGOS_SELF_TYPE_NORMAL SBVolumeControl* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) {
-  HBLogDebug(@"-[<SBVolumeControl: %p> increaseVolume]", self);
+  RLog(@"Volume Increased");
   _logos_orig$_ungrouped$SBVolumeControl$increaseVolume(self, _cmd);
-  AudioServicesPlaySystemSound(1519);
+  AudioServicesPlaySystemSound(1103);
 }
 
 
 static void _logos_method$_ungrouped$SBVolumeControl$decreaseVolume(_LOGOS_SELF_TYPE_NORMAL SBVolumeControl* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) {
-  HBLogDebug(@"-[<SBVolumeControl: %p> decreaseVolume]", self);
+  RLog(@"Volume Decreased");
   _logos_orig$_ungrouped$SBVolumeControl$decreaseVolume(self, _cmd);
-  AudioServicesPlaySystemSound(1519);
+  AudioServicesPlaySystemSound(1104);
 }
 
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$SBVolumeControl = objc_getClass("SBVolumeControl"); MSHookMessageEx(_logos_class$_ungrouped$SBVolumeControl, @selector(increaseVolume), (IMP)&_logos_method$_ungrouped$SBVolumeControl$increaseVolume, (IMP*)&_logos_orig$_ungrouped$SBVolumeControl$increaseVolume);MSHookMessageEx(_logos_class$_ungrouped$SBVolumeControl, @selector(decreaseVolume), (IMP)&_logos_method$_ungrouped$SBVolumeControl$decreaseVolume, (IMP*)&_logos_orig$_ungrouped$SBVolumeControl$decreaseVolume);} }
-#line 18 "Tweak.x"
+#line 19 "Tweak.x"

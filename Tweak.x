@@ -1,17 +1,18 @@
 #import <AudioToolbox/AudioToolbox.h>
+#import <RemoteLog.h>
 %hook SBVolumeControl
 -(void)increaseVolume
 {
-  %log;
+  RLog(@"Volume Increased");
   %orig;
-  AudioServicesPlaySystemSound(1519);
+  AudioServicesPlaySystemSound(1103);
 }
 
 -(void)decreaseVolume
 {
-  %log;
+  RLog(@"Volume Decreased");
   %orig;
-  AudioServicesPlaySystemSound(1519);
+  AudioServicesPlaySystemSound(1104);
 }
 
 %end
