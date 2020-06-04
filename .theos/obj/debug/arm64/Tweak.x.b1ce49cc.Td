@@ -5,8 +5,7 @@
   /Users/amirm/theos/vendor/include/_Prefix/IOSMacros.h \
   /Users/amirm/theos/vendor/include/HBLog.h \
   /Users/amirm/theos/vendor/include/CoreFoundation/CFLogUtilities.h \
-  /Users/amirm/theos/vendor/include/substrate.h \
-  /Users/amirm/theos/include/RemoteLog.h
+  /Users/amirm/theos/vendor/include/substrate.h
 
 /Users/amirm/theos/Prefix.pch:
 
@@ -19,5 +18,3 @@
 /Users/amirm/theos/vendor/include/CoreFoundation/CFLogUtilities.h:
 
 /Users/amirm/theos/vendor/include/substrate.h:
-
-/Users/amirm/theos/include/RemoteLog.h:

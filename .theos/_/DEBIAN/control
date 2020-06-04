@@ -2,9 +2,9 @@ Package: com.amirm.hapticvolume
 Name: HapticVolume
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Description: Provides haptic feedback when changing volume
+Description: Provides haptic feedback & sound when changing volume
 Maintainer: Amir Maula
 Author: Amir Maula
 Section: Tweaks
-Version: 0.0.1-9+debug
+Version: 1.0.0-1+debug
 Installed-Size: 136
