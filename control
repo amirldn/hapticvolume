@@ -3,7 +3,7 @@ Name: HapticVolume
 Depends: mobilesubstrate
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Provides haptic feedback when changing volume
 Maintainer: Amir Maula
 Author: Amir Maula
 Section: Tweaks
